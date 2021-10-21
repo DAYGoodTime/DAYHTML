@@ -1,27 +1,44 @@
-.sup{
+a.sup{
     display: inline-block;
     position: fixed;
-    left: 500px;
-    margin-right:50px;
-    margin-left:50px;
+    left: 40%;
 }
-.loi{
+a.loi{
     display: inline-block;
     position: fixed;
-    left: 400px;
-    margin-right:50px;
-    margin-left:50px;
+    left: 30%;
+}
+div.table{
+    position: relative;
+}
+div.ThirdLogin{
+    position: relative;
+    left: 42%;
+}
+input.btn
+{
+    position:fixed;
+    width: 18%;
+    height: 6%;
+    color: white;
+    font-size: 20px;
+    background-color:rgb(30, 146, 255);
 }
 a {
 
     text-decoration:none;
 }
-img{
-    width: 40%;
-    height: 40%;
-    float: left;
+div.logo{
+    top: 10%;
+    position: relative;
 }
-.bg{
+img.logo{
+    position: relative;
+    width: 42%;
+    height: 42%;
+    float:left;
+}
+div.bg{
     position:fixed;
     top: 0;
     left: 0;
@@ -32,16 +49,29 @@ img{
     background-size: cover;
     background-position: center 0;
 }
-.loginin{
+div.logins{
     position: fixed;
     top: 25%;
     left: 10%;
     padding:10px 40px;
     background:#ffffff;
-    width:45%;
+    width:35%;
+    height: 55%;
     border-radius:25px;
-    box-shadow: -10px -10px 5px #ffffff;
+    box-shadow: 8px 8px 8px #d0d0d0;
 }
-.hr{
-    width: 55%;
+hr.hr{
+    position:relative;
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
+}
+img.avr{
+    position: fixed;
+    left: 34%;
+    top: 32%;
+}
+img.ThirdLogin{
+    height: 10%;
+    width: 10%;
 }

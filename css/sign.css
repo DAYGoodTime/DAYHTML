@@ -1,26 +1,26 @@
-.sup{
+a.sup{
     display: inline-block;
     position: fixed;
-    left: 500px;
-    margin-right:50px;
-    margin-left:50px;
+    left: 48%;
 }
-.loi{
+a.loi{
     display: inline-block;
     position: fixed;
-    left: 400px;
-    margin-right:50px;
-    margin-left:50px;
+    left: 33%;
 }
 a {
 
     text-decoration:none;
 }
-img{
-    top: 20%;
-    width: 40%;
-    height: 40%;
-    float: left;
+div.logo{
+    top: 10%;
+    position: relative;
+}
+img.logo{
+    position: relative;
+    width: 42%;
+    height: 42%;
+    float:left;
 }
 .signup{
     position: fixed;
@@ -29,8 +29,18 @@ img{
     padding:10px 40px;
     background:#ffffff;
     width:45%;
+    height:50%;
     border-radius:25px;
-    box-shadow: -10px -10px 5px #ffffff;
+    box-shadow: 10px 10px 5px #ffffff;
+}
+input.btn
+{
+    position:fixed;
+    width: 18%;
+    height: 6%;
+    color: white;
+    font-size: 20px;
+    background-color:rgb(30, 146, 255);
 }
 .bg{
     position:fixed;

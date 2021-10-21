@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/login.css">
-    <title>Welcom to BBX</title>
+    <title>Welcome to BBX</title>
 </head>
 <body>
     <div class="bg"></div>
-    <div class="loginin">
-    <div><img src="img/logo.png" /></div>
+    <div class="logins">
+        <div class="logo"><img class="logo" src="img/logo.png" alt="404"/></div>
         <a class="loi" href="Login in.html" >登录</a>
         <a class="sup" href="Sign up.html" >注册</a><br>
-        <hr/>
+        <hr/><br>
+        <img class="avr" src="img/avr.jpg" alt="404"/><br><br><br><br>
+        <div class="table">
+            <table>
+                <form>
+                    <tr>
+                        <td><label for="uc">账号</label></td><td><input type="text" name="Useraccount" placeholder="请输入用户名" id="uc"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="psw">密码</label></td><td><input id="psw" type="password" name="Userpassword" placeholder="最长20个字符" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="isSavePsw" id="rpsw" checked><label for="rpsw">记住密码</label></td><td>
+                        <input type="checkbox" name="isAutoLogin" id="alg"><label for="alg">自动登录</label>
+                        <a href="#" >忘记密码?</a></td>
+                    </tr>
+                    <tr>
+                        <td> <span><input class="btn" type="submit" value="登		录"/></span> </td>
+                    </tr>
+                </form>
+            </table>
+            <div class="ThirdLogin">
+            <br><br><br>第三方登录<br>
+            <hr class="hr"/>
+            <a href="#">
+                <img  class="ThirdLogin" src="img/wb.jpg" alt="404"></a>
+            <a href="#">
+                <img  class="ThirdLogin" src="img/wx.jpg" alt="404"></a>
+            <a href="#">
+                <img  class="ThirdLogin" src="img/qq.jpg" alt="404"></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>   
