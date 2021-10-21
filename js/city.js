@@ -1,4 +1,4 @@
-//对不起学长学姐们，这个js数据从网上获取，要把全部城市打出来太复杂了，所以注释都为我自己所写，确保在使用js还是以本人看得懂的基础上使用
+//对不起学长学姐们，这个js数据从网上获取，要把全部城市打出来太复杂了!
 
 
 //城市列表！！！！！！！！！！！！！！！！！！！
@@ -447,7 +447,7 @@ var provinceList = [
         var provinceName = provinceArray[index];　　　　//通过数组下标获取数据（名字）
         for(var n=0; n<provinceList.length; n++){　　　　//通过循环遍历列表数组
             var provice = provinceList[n];　　　　　　　　　　　//通过列表下标获取数据
-            if (provice.name == provinceName){　　　　　　//开始建立连接，通过if判断，前提是要满足if中的条件
+            if (provice.name === provinceName){　　　　　　//开始建立连接，通过if判断，前提是要满足if中的条件
                 cityList = provice.cityList;　　　　　　　　　　　　//通过province的cityList获取城市列表
                 cityTag.innerHTML="";　　　　　　　　　　　　　　//这个步骤很重要，分析语句，是吧里面的内容变为空，意思就是当你选择一个省时，后面会出现城市的数据，当你选择另外的省时会                                                                            出现相应的市的数据，如果不删除就会同时显示在一个选择框中，就不会是我们想要的结果
                 for(var c=0; c<cityList.length; c++){　　　　　　//使用循环遍历城市数列
@@ -467,7 +467,7 @@ var provinceList = [
         var cityName = cityArray[index];
         for(var j=0;j<cityList.length;j++){
             var city = cityList[j];
-            if(city.name == cityName){
+            if(city.name === cityName){
                 var areaList = city.areaList;
                 areaTag.innerHTML = "";
                 for( var k=0;k<areaList.length;k++){
