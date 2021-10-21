@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .sup{
+            display: inline-block;
+            position: fixed;
+            left: 500px;
+            margin-right:50px;
+	        margin-left:50px;
+        }
+        .loi{
+            display: inline-block;
+            position: fixed;
+            left: 400px;
+            margin-right:50px;
+	        margin-left:50px;
+        }
+        a {
+
+            text-decoration:none;
+        }
+        img{
+            width: 40%;
+            height: 40%;
+            float: left;
+        }
+        .signup{
+            position: fixed;
+            top: 100px;
+            left: 50px;
+	        padding:10px 40px; 
+	        background:#ffffff;
+	        width:700px;
+	        border-radius:25px;
+            box-shadow: -10px -10px 5px #ffffff;
+        }
+        .bg{
+            position:fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:100%;
+            z-index:-10;
+            background: url(img/bg.jpeg);
+            background-size: cover;
+            background-position: center 0;            
+        }
+    </style> 
+        <script language="javascript" src="js/city.js" type="text/javascript" charset="utf-8"></script>
+    <title>Welcom to BBX</title>
+</head>
+<body onload='getProvince()'>
+<div class="bg">
+    <div class="signup">
+        <div><img src="img/logo.png" /></div> 
+                <a class="loi" href="Login in.html" >登录</a>
+                <a class="sup" href="Sign up.html" >注册</a><br>
+                <hr width="50%"/>
+        <table>
+        <form>
+            <tr>
+                <td><label for="uc">账号</label></td><td><input type="text" name="Useraccount" placeholder="请输入用户名" id="uc"></td>
+            </tr>
+            <tr>
+                <td><label for="psw">密码</label></td><td><input id="psw" type="password" name="Userpassword" placeholder="最长20个字符" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><label for="cpsw">确认密码</label></td> <td><input type="password" name="Confirmpassword" id="cpsw"></td>
+            </tr>     
+            <tr>
+                <td>性别</td><td><input type="radio" name="sex" value="男" id="sex"> <label for="sex">男</label> <input type="radio" name="sex" value="女" id="sex2"> <label for="sex2">女</label>  <input type="radio" name="sex" value="保密" id="sex3" checked> <label for="sex3">保密</label></td>
+            </tr>   
+            <!-- 所在地选择 -->
+            <tr>
+                <td>所在地</td>
+                <td>
+                    <select id="province" onchange="chooseProvince(this)">
+                        <option value="1">请选择省</option>
+                    </select>               
+                    <select id="city" onchange="chooseCity(this)">
+                        <option value="2">请选择市</option>
+                    </select>             
+                    <select id="area">
+                        <option value="3">请选择区</option>
+                    </select>
+                </td>        
+            </tr>
+            <tr>
+                <td>兴趣爱好</td>
+                <td><input type="checkbox" name="hobby" value="学习" id="hobby1"> <label for="hobby1">学习</label> <input type="checkbox" name="hobby" value="运动" id="hobby2"> <label for="hobby2">运动</label> <input type="checkbox" name="hobby" value="旅游" id="hobby3"> <label for="hobby3">旅游</label> <input type="checkbox" name="hobby" value="摄影" id="hobby4"> <label for="hobby4">摄影</label></td>            
+            </tr>
+            <tr>
+                <td>上传头像:</td> <td><input type="file"name="UserAvatar"></td>
+            </tr>
+            <tr>
+                <td><label for="ph">手机号码</label></td> <td><input type="text" name="PhoneNumber" id="ph"></td> 
+            </tr>
+            <tr>
+                <td><label for="vc">验证码</label></td>
+                <td><input type="text" name="VerifiCode" style="width:60px;height:auto;" id="vc"> <input type="button" name="GetVerific" value="获取验证码"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="提交"></td>
+            </tr>
+        </form>
+        </table>
+    </div>
+</div>
+</body>
+</html>   
