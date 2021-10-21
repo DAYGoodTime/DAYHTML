@@ -2,7 +2,7 @@
 
 function LoginChecked(){
     var userAccount = document.forms["login"]["userAccount"].value;
-    var uspw = document.forms["login"]["Userpassword"].value;
+    var uspw = document.forms["login"]["UserPassword"].value;
     if (userAccount == null || userAccount === ""){
         alert("请输入用户名");
         return false;
@@ -14,10 +14,10 @@ function LoginChecked(){
 }
 function SignChecked() {
     var userAccount = document.forms["sign"]["userAccount"].value;
-    var uspw = document.forms["sign"]["Userpassword"].value;
-    var cpsw = document.forms["sign"]["Confirmpassword"].value;
+    var uspw = document.forms["sign"]["UserPassword"].value;
+    var cpsw = document.forms["sign"]["ConfirmPassword"].value;
     var phoneNumber = document.forms["sign"]["PhoneNumber"].value;
-    var VeficCode = document.forms["sign"]["VerifiCode"].value;
+    var VeficCode = document.forms["sign"]["VerificationCode"].value;
     if(userAccount === ""){
         alert("请输入用户名");
         return false;
