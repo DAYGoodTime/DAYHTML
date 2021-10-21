@@ -28,10 +28,10 @@ img.logo{
     left: 10%;
     padding:10px 40px;
     background:#ffffff;
-    width:45%;
+    width:43%;
     height:50%;
     border-radius:25px;
-    box-shadow: 10px 10px 5px #ffffff;
+    box-shadow: 8px 8px 8px #d0d0d0;
 }
 input.btn
 {

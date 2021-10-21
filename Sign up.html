@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/sign.css">
     <script src="js/city.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/method.js" type="text/javascript" charset="utf-8"></script>
     <title>Welcome to BBX</title>
 </head>
 <body onload='getProvince()'>
@@ -17,9 +18,9 @@
         <hr/>
         <div class="table">
             <table>
-            <form>
+            <form name="sign">
                 <tr>
-                    <td><label for="uc">账号</label></td><td><input type="text" name="Useraccount" placeholder="请输入用户名" id="uc"></td>
+                    <td><label for="uc">账号</label></td><td><input type="text" name="userAccount" placeholder="请输入用户名" id="uc"></td>
                 </tr>
                 <tr>
                     <td><label for="psw">密码</label></td><td><input id="psw" type="password" name="Userpassword" placeholder="最长20个字符" maxlength="20"></td>
@@ -57,10 +58,10 @@
                 </tr>
                 <tr>
                     <td><label for="vc">验证码</label></td>
-                    <td><input type="text" name="VerifiCode" style="width:60px;height:auto;" id="vc"> <input type="button" name="GetVerific" value="获取验证码"></td>
+                    <td><input type="text" name="VerifiCode" style="width:60px;height:auto;" id="vc"><button type="button" >获取验证码</button>
                 </tr>
                 <tr>
-                    <td> <span><input class="btn" type="submit" value="注		册"/></span> </td>
+                    <td> <span><input class="btn" onclick="window.SignChecked()" type="submit" value="注		册"/></span> </td>
                 </tr>
             </form>
             </table>
