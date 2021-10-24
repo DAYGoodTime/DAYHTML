@@ -437,10 +437,10 @@ var provinceList = [
             var province = provinceList[i];　　　　　　　　　　//通过下标获取省列表（上面的列出列表）中的数据
             var provinceName = province.name;　　　　　　　　//根据 province.name获取省的名字
             provinceArray[i]=provinceName;　　　　　　　　　　　//将获得的省的名字注入到数组中去
-            provinceTag.add(new Option(provinceName,i));　　　　//通过Option方法将省的名字与下标i对应，取出来。然后通过add()方法，将每一个名字放到provinceTag中
+            provinceTag.add(new Option(provinceName,i))　　　　//通过Option方法将省的名字与下标i对应，取出来。然后通过add()方法，将每一个名字放到provinceTag中
         }
     }
-    
+
     function chooseProvince(th){　　　　　　　　//通过方法的调用来实现省 市之间的二级联动，th是我们设置的一个参数，方便下面进行使用，可以理解为province的一个元素（名字）
         var cityTag = document.getElementById("city");
         var index = th.selectedIndex-1;　　　　　　　　　　//此处selectedIndex的索引减1是因为我们在写<select><option>按钮时  “请选择省”  占了一个索引，所以需要减1才能对应
